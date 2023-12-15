@@ -1,5 +1,5 @@
 <template>
-  <div class="box">
+  <div class="box formulario">
     <div class="columns">
       <div class="column is-8" role="form" aria-label="Formulário para criaçãode uma nova tarefa">
         <input type="text" class="input" placeholder="Qual tarefa você deseja iniciar?" v-model="descricao">
@@ -38,3 +38,10 @@
     }
   });
 </script>
+
+<style>
+  .formulario {
+    color: var(--texto-primario);
+    background-color: var(--bg-primario);
+  }
+</style>
