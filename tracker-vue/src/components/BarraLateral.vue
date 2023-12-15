@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>
+    <h1 class="is-flex is-align-items-center is-justify-content-center">>
       <img src="../assets/logo-tracker.png" alt="Logo Alura Tracker">
     </h1>
   </header>

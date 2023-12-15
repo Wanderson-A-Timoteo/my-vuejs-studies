@@ -1,13 +1,13 @@
 <template>
   <div class="box">
     <div class="columns">
-      <div class="columns is-8" role="form" aria-label="Formulário para criaçãode uma nova tarefa">
+      <div class="column is-8" role="form" aria-label="Formulário para criaçãode uma nova tarefa">
         <input type="text" class="input" placeholder="Qual tarefa você deseja iniciar?">
       </div>
       <div class="column">
         <div class="is-flex is-align-items-center is-justify-content-space-between">
           <section>
-            <strong>00:00:00</strong>
+            <strong> {{ tempoDecorrido }} </strong>
           </section>
           <button class="button" @click="iniciar">
             <span class="icon">
@@ -32,9 +32,23 @@
   import { defineComponent } from 'vue';
   
   export default defineComponent({
+    // eslint-disable-next-line vue/multi-word-component-names
     name: 'Formulario',
+    data() {
+      return {
+        tempoEmSegundos: 0
+      }
+    },
+    computed: {
+      tempoDecorrido() : string {
+        return new Date(this.tempoEmSegundos * 1000).toISOString().substr(11, 8)
+      }
+    },
     methods: {
       iniciar() {
+        setInterval( () => {
+          this.tempoEmSegundos += 1;
+        }, 1000);
         console.log("iniciando");
       },
       finalizar() {
