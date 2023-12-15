@@ -24,6 +24,7 @@
   export default defineComponent({
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Formulario',
+    emits: ['aoTemperizadorFinalizado'],
     components: {
       Cronometro,
     },
@@ -36,14 +37,16 @@
     },
     methods: {
       iniciar() {
-        this.cronometroRodando = true
+        this.cronometroRodando = true;
         this.cronometro = setInterval(() => {
           this.tempoEmSegundos += 1;
         }, 1000);
       },
       finalizar() {
-        this.cronometroRodando = false
+        this.cronometroRodando = false;
         clearInterval(this.cronometro);
+        this.$emit('aoTemperizadorFinalizado', this.tempoEmSegundos);
+        this.tempoEmSegundos = 0;
       }
     },
   });
