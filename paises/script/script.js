@@ -1,28 +1,12 @@
-function bandeira(pais) {
-  return '<img src="bandeiras/'+pais+'.png" />';
-}
-
-let app = new VTTCue({
-  el:'#app',
+let app = new Vue({
+  el: '#app',
   data: {
-    pais: '',
-    argentina: bandeira('argentina'),
-    brazil: bandeira('brazil'),
-    china: bandeira('china'),
-    uk: bandeira('uk'),
-    usa: bandeira('usa')
-  },
-  methods: {
-    paises: function() {
-      return [
-        {bandera: this.argentina, continente: 'América do Sul'},
-        {bandera: this.brazil, continente: 'América do Sul'},
-        {bandera: this.china, continente: 'Ásia'},
-        {bandera: this.uk, continente: 'Europa'},
-        {bandera: this.usa, continente: 'América do Norte'}
-      ];
-    }
+    paises: [
+      { bandeira: '<img src="bandeiras/argentina.png" />', continente: 'América do Sul' },
+      { bandeira: '<img src="bandeiras/brazil.png" />', continente: 'América do Sul' },
+      { bandeira: '<img src="bandeiras/china.png" />', continente: 'Ásia' },
+      { bandeira: '<img src="bandeiras/uk.png" />', continente: 'Europa' },
+      { bandeira: '<img src="bandeiras/usa.png" />', continente: 'América do Norte' }
+    ]
   }
 });
-
-app.pais = 'brazil';
