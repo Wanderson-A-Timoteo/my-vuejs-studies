@@ -11,7 +11,7 @@
   
   export default defineComponent({
     name: 'BarraLateral'
-})
+  })
 </script>
 
 <style scoped>
