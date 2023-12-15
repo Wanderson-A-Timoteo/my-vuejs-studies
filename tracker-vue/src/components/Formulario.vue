@@ -14,12 +14,12 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import Temporizador from './Temporizador.vue';
-  
+    
   export default defineComponent({
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Formulario',
     components: {
-      Temporizador
+      Temporizador,
     },
     data () {
       return {
