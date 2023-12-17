@@ -1,7 +1,7 @@
 <template>
   <header class="menu">
     <h1 class="is-flex is-align-items-center is-justify-content-center">
-      <img src="../assets/logo-tracker.png" alt="Logo Alura Tracker">
+      <img src="../assets/timed-tasks.png" alt="Logo Alura Tracker">
     </h1>
     <button class="button" @click="alterarTema">
       {{ textoBotao }}

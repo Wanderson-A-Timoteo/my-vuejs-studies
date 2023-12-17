@@ -12,7 +12,7 @@
     data() {
       return {
         estilos: {
-          background: '#FAF0CA'
+          background: '#FFF8E9'
         }
       };
     },

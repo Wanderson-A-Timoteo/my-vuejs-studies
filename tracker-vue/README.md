@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="src/assets/logo-tracker.png" />
+  <img src="src/assets/timed-tasks.png" />
 </h1>
 
 <div align="center">
@@ -32,28 +32,28 @@ Deploy na vercel, acessar site [Alura Tracker](https://tracker-vuejs-wanderson-t
 
 <p align="center">
     <img alt="Lista de tarefas" title="Lista de tarefas" 
-    src="src/assets/alura-tracker-light.png" />
+    src="src/assets/timed-tasks-light.png" />
 </p>
 
 <br>
 
 <p align="center">
     <img alt="Lista de tarefas" title="Lista de tarefas" 
-    src="src/assets/alura-tracker-tasks-light.png" />
+    src="src/assets/timed-tasks-lights.png" />
 </p>
 
 ### Tema Dark
 
 <p align="center">
     <img alt="Lista de tarefas" title="Lista de tarefas" 
-    src="src/assets/alura-tracker-dark.png" />
+    src="src/assets/timed-tasks-dark.png" />
 </p>
 
 <br>
 
 <p align="center">
     <img alt="Lista de tarefas" title="Lista de tarefas" 
-    src="src/assets/alura-tracker-tasks-dark.png" />
+    src="src/assets/timed-tasks-darks.png" />
 </p>
 
 ## 🚀 Tecnologias
